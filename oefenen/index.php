@@ -13,7 +13,7 @@ echo "<pre>";
 
 foreach($Lesrooster as $row){
     foreach ($row as $vak){
-        echo "$vak  ";
+        echo "<td> "$vak  "</tag>;
         echo "<br>";    
     }
     
