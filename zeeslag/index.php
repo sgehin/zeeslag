@@ -9,7 +9,10 @@
     <script src="battlescript.js"></script>                         <!-- koppeleing tussen html en js --> 
    
         <script>
-                   
+            function myKlik(){
+            alert("test gelukt");
+            document.getElementById("id").innerHTML = "Hello World";
+            }      
          </script>
         <style>
                
@@ -23,15 +26,15 @@
                 <?php
                     $kol=0;
                     for($tel=0;$tel<10;$tel++){
-                    echo "<td id=$kol$tel></td>";
+                    echo "<td><button id='$kol$tel' onclick='myKlik()'>$kol$tel</button></td>";
                     }
-                ?>
+                ?> 
             </tr>
             <tr>
                 <?php
                     $kol=1;
                     for($tel=0;$tel<10;$tel++){
-                    echo "<td id=$kol$tel></td>";
+                    echo "<td id=$kol$tel>$kol$tel</td>";
                     }
                 ?>
             </tr>
@@ -100,5 +103,6 @@
                 ?>
             </tr>
         </table>
+        
     </body>
 </html>
